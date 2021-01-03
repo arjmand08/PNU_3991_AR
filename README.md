@@ -6,7 +6,7 @@
 - [SOP](https://arjmand08.github.io/PNU_3991_AR/SOP/)
 - [jlord/patchwork](https://arjmand08.github.io/PNU_3991_AR/jlord_patchwork/patchwork.jpg)
 - [Certificates { JavaScript & HTML }](https://arjmand08.github.io/PNU_3991_AR/Certificates/)
-- [Chain_Of_Responsibility_Pattern]("https://arjmand08.github.io/PNU_3991_AR/Chain_Of_Responsibility_Pattern/")
+- [Chain_Of_Responsibility_Pattern](https://arjmand08.github.io/PNU_3991_AR/Chain_Of_Responsibility_Pattern/)
 - [GitHub](https://github.com/arjmand08)
 
 ------------------
