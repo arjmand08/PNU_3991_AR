@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Chain Of Responsibility</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="Distribution" content="Global"/>
+<meta name="description" content="Chain Of Responsibility"/>
+<meta name="keywords" content="Chain Of Responsibility"/>
+<link rel="icon" type="image/png" href="style/images/Favicon.png">
+<link rel="stylesheet" href="style/bootstrap.css">
+<link rel="stylesheet" href="style/prettify.css">
+<link rel="stylesheet" href="style/app.css">
+<link rel="stylesheet" href="style/tutorial.css">
+<link rel="StyleSheet" type="text/css" href="style/style.css"/>
+</head>
+<body>
+<div id="authxx"> <img class="logo" src="style/images/logo.png"/>
+  <form id="frmAuthxx">
+   <div align="center"><input class="input" type="text" id="t1" onkeypress="javascript:return isNumber(event)" required autofocus placeholder=" عددی را وارد نمایید و بر روی اجرا کلیک کنید"/></div>
+    <div align="left"><a class="btn btn-submit-green xbtn-sm" href="javascript:void(0);" onclick="run();return false">اجــــرا</a></div>
+<br><a href="https://juyandeganelm.ac.ir/dl/Learn_Chain_Of_Responsibility.mp4" target="_blank"><span class="title"><p align="center">جهت مشاهده فیلم آموزشی پترن کلیک کنید</span></a>
+<br><a href="https://www.dofactory.com/javascript/design-patterns/chain-of-responsibility" target="_blank"><span class="title"><p align="center">سایت منبع</span></a></div>
+<div id="auth2">
+<span class="title">  <p align="right">: کد جاوا اسکریپت</span>
+<pre class="prettyprint linenums run code-hscroll"><ol class="linenums"><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="kwd">var</span><span class="pln"> </span><span class="typ">Request</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">amount</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">amount </span><span class="pun">=</span><span class="pln"> amount</span><span class="pun">;</span></li><li class="L3"><span class="pln">log</span><span class="pun">.</span><span class="pln">add</span><span class="pun">(</span><span class="str">" مبلغ : "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> amount </span><span class="pun">+</span></span><span class="str">" هزار تومان" </span><span class="pln">+</span><span class="str">"\n"</span><span class="pun">);</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="typ">Request</span><span class="pun">.</span><span class="pln">prototype </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="kwd">get</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">bill</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L8"><span class="pln">        </span><span class="kwd">var</span><span class="pln"> count </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">floor</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">amount </span><span class="pun">/</span><span class="pln"> bill</span><span class="pun">);</span></li><li class="L9"><span class="pln">        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">amount </span><span class="pun">-=</span><span class="pln"> count </span><span class="pun">*</span><span class="pln"> bill</span><span class="pun">;</span></li><li class="L0"><span class="pln">        log</span><span class="pun">.</span><span class="pln">add</span><span class="pun">(</span><span class="str">"تعداد"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> count </span><span class="pun">+</span><span class="str"> "اسکناس"</span><span class="pln"></span><span class="pun">+</span><span class="pln"> bill </span><span class="pun">+</span><span class="pln"> </span><span class="str">"هزار تومانی"</span><span class="pun">);</span></li><li class="L1"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="pun">}</span></li><li class="L3"><span class="pun">}</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="com">// log helper </span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="kwd">var</span><span class="pln"> log </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L8"><span class="pln">    </span><span class="kwd">var</span><span class="pln"> log </span><span class="pun">=</span><span class="pln"> </span><span class="str">""</span><span class="pun">;</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">        add</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">msg</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> log </span><span class="pun">+=</span><span class="pln"> msg </span><span class="pun">+</span><span class="pln"> </span><span class="str">"\n"</span><span class="pun">;</span><span class="pln"> </span><span class="pun">},</span></li><li class="L2"><span class="pln">        show</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> alert</span><span class="pun">(</span><span class="pln">log</span><span class="pun">);</span><span class="pln"> log </span><span class="pun">=</span><span class="pln"> </span><span class="str">""</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></li><li class="L3"><span class="pln">    </span><span class="pun">}</span></li><li class="L4"><span class="pun">})();</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="kwd">function</span><span class="pln"> run</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="kwd">var</span><span class="pln"> input </span><span class="pun">=</span><span class="pln"> </span><span class="kwd"><span class="typ"> document</span><span class="pln"></span><span class="typ">.</span><span class="pun">getElementById</span><span class="pun">(</span><span class="lit">txt_input</span><span class="pun">);</span></li><li class="L8"><span class="pln">    </span><span class="kwd">var</span><span class="pln"> input </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Request</span><span class="pun">(</span><span class="lit">input</span><span class="pun">);</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="pln">    request</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">100</span><span class="pun">).</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">50</span><span class="pun">).</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">10</span><span class="pun">).</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">5</span><span class="pun">).</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pln">    log</span><span class="pun">.</span><span class="pln">show</span><span class="pun">();</span></li><li class="L2"><span class="pun">}</span></li></ol></pre>
+  </form>
+       <script src="js/jquery.js"></script>
+        <script src="js/jquery_003.js"></script>
+        <script src="js/jquery_002.js"></script>
+        <script src="js/prettify.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/app.js"></script>
+        <script type="text/javascript" async="" src="js/analytics.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/MaxLength.min.js"></script>
+        <script type="text/javascript">
+           function isNumber(evt) {
+           var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+           if (iKeyCode  > 31 && (iKeyCode < 48 || iKeyCode > 57))
+            return false;
+
+           return true;
+           }   
+               $(function () {
+                //Normal Configuration
+                $("#t1").MaxLength({ MaxLength: 3});
+            
+
+                //Specifying the Character Count control explicitly
+                $("#t01").MaxLength(
+                {
+                    MaxLength: 5,
+                    CharacterCountControl: $('#counter')
+                });
+
+                //Disable Character Count
+                $("#t1").MaxLength(
+                {
+                    MaxLength: 20,
+                    DisplayCharacterCount: false
+                });
+            });
+        </script>
+        <script type="text/javascript">
+    
+            var Request = function (amount) {
+                 this.amount = amount;
+
+            log.add("مبلغ: " + amount + " هزار تومان" + "\n");
+            }
+
+             Request.prototype = {
+                get: function (bill) {
+             var count = Math.floor(this.amount / bill);
+                this.amount -= count * bill;
+
+             log.add("تعداد " + count + " اسکناس " + bill + " هزار تومانی");
+
+             return this;
+            }
+        }
+
+    // log helper
+
+    var log = (function () {
+        var log = "";
+
+        return {
+            add: function (msg) { log += msg + "\n"; },
+            show: function () { alert(log); log = ""; }
+        }
+    })();
+
+    function run() {
+
+        var input = document.getElementById('t1').value;
+        var request = new Request(input);
+        request.get(100).get(50).get(10).get(5).get(1);
+
+        log.show();
+    }
+</script>
+
+
+</div>
+</body>
+</html>
