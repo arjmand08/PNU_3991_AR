@@ -18,7 +18,7 @@
 -------------
 ## Implementation_Java Script
 
-- [Implementation_Chain_Of_Responsibility_Pattern](https://github.com/arjmand08/PNU_3991_AR/SoftwareArchitecture/Chain_Of_Responsibility_Pattern)
+- [Implementation_Chain_Of_Responsibility_Pattern](https://arjmand08.github.io/PNU_3991_AR/SoftwareArchitecture/Chain_Of_Responsibility_Pattern/)
 
 --------------
 
