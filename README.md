@@ -20,8 +20,8 @@
 - [خلاصه ارزیابی بخش عمومی](https://github.com/arjmand08/PNU_3991_AR/_General/AA_GeneralSection_CheckList_AR_3991.pdf)
 
 ##  بخش دروس ارشد
-- [خلاصه ارزیابی درس_متدولوژی توسعه نرم افزار](https://github.com/arjmand08/PNU_3991_AR/SoftwareDevelopmentMethodologies/AA_SoftwareDevelopmentMethodologies_CheckList_AR_3991.pdf)
-- [خلاصه ارزیابی درس_معماری نرم افزار](https://github.com/arjmand08/PNU_3991_AR/SoftwareArchitecture/AA_SoftwareArchitecture_CheckList_AR_3991.pdf)
+- [خلاصه ارزیابی درس_متدولوژی توسعه نرم افزار](https://github.com/arjmand08/PNU_3991_AR/blob/main/_General/AA_CV_CheckList_AR_3991.pdf)
+- [خلاصه ارزیابی درس_معماری نرم افزار](https://github.com/arjmand08/PNU_3991_AR/blob/main/_General/AA_SoftwareArchitecture_CheckList_AR_3991.pdf)
 
 -----------------
 ## فهرست درس ها  
