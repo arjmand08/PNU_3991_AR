@@ -20,26 +20,18 @@
 
 ### Presentation
 
-   -  _01. [Blended](https://juyandeganelm.ac.ir/dl/Blended.mp4)
-   -  _02. [IE](https://juyandeganelm.ac.ir/dl/IE.mp4)
-   -  _03. [Merise](https://juyandeganelm.ac.ir/dl/Merise.mp4)
+   -  _01.[Blended](https://juyandeganelm.ac.ir/dl/Blended.mp4)
+   -  _02.[IE](https://juyandeganelm.ac.ir/dl/IE.mp4)
+   -  _03.[Merise](https://juyandeganelm.ac.ir/dl/Merise.mp4)
      
 -----------------------------------
        
 ## CHAPTER 02_Information Systems Development 
 
-### Reading
+### Downloding :
 
    - [Information Systems Development](https://juyandeganelm.ac.ir/dl/S2)
-   
-   <table style="width:100%">
-  <tr>
-  <th >
- <p>توسعه سیستم های اطلاعاتی:</p>
 
-</th >
-  </tr>
-   </table>
 
 ----------------------------
 ## گروه 
