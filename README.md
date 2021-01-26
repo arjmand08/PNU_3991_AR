@@ -26,9 +26,9 @@
 -----------------
 ## فهرست درس ها  
 
-[1115282_01	متدولوژي ايجاد نرم افزار	3](https://github.com/arjmand08/PNU_3991_AR/SoftwareDevelopmentMethodologies)
+[1115282_01	متدولوژي ايجاد نرم افزار	3](https://github.com/arjmand08/PNU_3991_AR/blob/main/SoftwareDevelopmentMethodologies)
 <br>
-[1115280_01	معماري نرم افزار	3](https://github.com/arjmand08/PNU_3991_AR/SoftwareArchitecture)
+[1115280_01	معماري نرم افزار	3](https://github.com/arjmand08/PNU_3991_AR/blob/main/SoftwareArchitecture)
 <br>
 --------------
 ## گروه های درسی
