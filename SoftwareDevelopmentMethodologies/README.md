@@ -20,9 +20,9 @@
 
 ### Presentation
 
-   -  _01.[Blended](https://juyandeganelm.ac.ir/dl/Blended.mp4)
-   -  _02.[IE](https://juyandeganelm.ac.ir/dl/IE.mp4)
-   -  _03.[Merise](https://juyandeganelm.ac.ir/dl/Merise.mp4)
+   - [Part1_Blended](https://juyandeganelm.ac.ir/dl/Blended.mp4)
+   - [Part2_IE](https://juyandeganelm.ac.ir/dl/IE.mp4)
+   - [Part3_Merise](https://juyandeganelm.ac.ir/dl/Merise.mp4)
      
 -----------------------------------
        
